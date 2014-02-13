@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+    <!-- JavaMail session factory -->
+    <!--     <Resource name="mail/Session" -->
+    <!--               auth="Container" -->
+    <!--               type="javax.mail.Session" -->
+    <!--               username="yourusername" -->
+    <!--               password="yourpassword" -->
+    <!--               mail.debug="true" -->
+    <!--               mail.user="yourusername" -->
+    <!--               mail.password="yourpassword" -->
+    <!--               mail.transport.protocol="smtp" -->
+    <!--               mail.smtp.host="localhost" -->
+    <!--               mail.smtp.auth="false" -->
+    <!--               mail.smtp.port="25" -->
+    <!--               mail.smtp.starttls.enable="true"/> -->
+
+    <Resource name="mail/Session" auth="Container"
+              type="javax.mail.Session"
+              factory="net.guillaume.tooling.tomcat.FakeMailSessionFactory" />
+
+
+</Context>
