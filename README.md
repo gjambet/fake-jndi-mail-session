@@ -1,0 +1,2 @@
+fake-jndi-mail-session
+======================
